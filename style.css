@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(209, 210, 209);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative; 
+    
+}
+.main {
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(40, 1fr); 
+    background-color: white;
+    width: fit-content; 
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer; 
+}
+
+.pole{
+    background-color: white;
+    width: 2vh;
+    height: 2vh;
+    border: 0.01mm solid;
+}
+.options{
+    width: 40vh;
+    height: 5vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    top: -30%;
+}
+button{
+    margin-inline: 1%;
+    width: 10vh;
+    height: 4vh;
+    border: 1px solid;
+    border-radius: 20px;
+    background-color: rgb(122, 194, 222);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+#color-input{
+    min-width: 9vh;
+    max-width: 9vh;
+    min-height: 4vh;
+    max-height: 4vh;
+    background-color: transparent;
+    border: none;
+    appearance: none;
+    cursor: pointer;
+}
+#color-input::-webkit-color-swatch{
+    border-radius: 20px;
+    border: 1.5px solid black;
+}
+button:hover{
+    background-color: rgb(111, 153, 170);
+}
+h1{
+    font-size: 6vh;
+    position: fixed;
+    margin: 60px;
+    color: black;
+}
+a{
+    font-size: 3vh;
+    font-weight: 500;
+    position: fixed;
+    margin: -860px;
+    text-decoration: none;
+    color: black;
+}
